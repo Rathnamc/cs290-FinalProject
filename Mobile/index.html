@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Phonegap - 101</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Phonegap 101</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#prerequisites">Prerequisites</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#steps">Making an App</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Phonegap 101</h1>
+                <hr>
+                <p>Phonegap 101 will help you get started with the limitless world of application development, in a language we all love HTML!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <hr class="light">
+                    <p class="text-faded">PhoneGap is a software development framework by Adobe System, which is used to develop mobile applications. To develop apps using PhoneGap, the developer does not require to have knowledge of mobile programming language but only web-development languages like, HTML, CSS, and JScript. PhoneGap produces apps for all popular mobile OS platforms such as iOS, Android, BlackBerry, and Windows Mobile OS etc</p>
+                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prerequisites">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Prerequisites</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="service-box">
+                        
+                        <i class="fa fa-4x fa-apple wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Mac OS</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="service-box">
+                        <a href="https://developer.apple.com/xcode/downloads/">
+                        <i class="fa fa-4x fa-file-code-o wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>X-Code</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="service-box">
+                        <a href="http://phonegap.com/getstarted/">
+                        <i class="fa fa-4x fa-arrow-down wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Phonegap</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Start</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h3>Step 1 :</h3>
+                <h4 class="steps">You have downloaded the Phonegap,now unarchive the folder, and you might want to save it somewhere safe on your hard drive. And that’s all there is to installing PhoneGap!
+It’s now time to create your project. Open up the Terminal app. It’s usually found in the Applications folder, within the Utilities folder. You’ll be presented with the Terminal interface, as this:
+<img src="img/terminal.png"/>
+</h4><h3>Step 2 :</h3>
+<h4 class="steps">
+Type the following command in Terminal and hit enter (but replace the path with wherever your copy of PhoneGap is):
+<p>
+    <code>
+    cd ~/Downloads/phoneGap-2.3.0/lib/ios/bin
+    </code>
+</p>
+
+*Replace/phoneGap-2.3.0 with the version you downloaded
+This takes you to the directory of the phonegap.
+Now type
+<p>
+    <code>
+    ./create ~/Desktop/ToDoer com.christopherstudios.ToDoer ToDoList
+    </code>
+</p>
+You’ll now find a ToDoer folder on your desktop. Open it up, dive into the www folder and take a look at the files inside, as shown below:
+<img src="img/step2.png"/>
+</h4>
+<h3>Step 3 :</h3>
+The two key files and folders here are
+<ul> 
+    <li><b>index.html</b>, 
+        <ul><li>which is where you’ll be writing the app’s code;</li></ul>
+        </li>
+        <li><b>index.css</b>
+            <ul><li> (found in the css folder), which is used to style the look and feel of the app</li></ul>
+        </li>
+</ul>
+Go back to the top level folder and open up the ToDoList.xcodeproj file in Xcode.
+In Xcode’s project navigator, open index.html. Then build and run your app. “Already?” you ask. Yes! Already! :]
+You should see the following:
+<img src="img/step2final.png"/>
+If your display matches the screenshot above, then everything is set up properly for your PhoneGap development environment.
+</h4>
+<h3>Steps 4 : Making of the App</h3>
+<h3>We are creating a small app which will add things to a to do list</h3>
+So replace all the stuff in <b>index.html</b>with : 
+<p><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;To-Do List&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/index.css&quot;/&gt;
+        &lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></p>
+If you are familiar with HTML you will notice that here we have set the Tilte as To-Do List
+Add following code in the body tag
+<p>
+    <pre>
+        <code>
+&lt;input type=&quot;button&quot; value=&quot;Add To-Do&quot;/&gt;
+&lt;input type=&quot;button&quot; value=&quot;Remove Completed Tasks&quot;/&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;table id=&quot;dataTable&quot; width=&quot;100%&quot; border=&quot;1&quot;&gt;
+&lt;/table&gt;
+        </code>
+    </pre>
+</p>
+Build and Run your code same.You will see the following has occured
+<img src="img/step3.png"/>
+So you see how easily we inserted buttons in our app.
+</h4>
+<h3>Step 4: Adding functionality to the buttons</h3>
+We want these buttons to be functional.They should do as per there actions.So lets add some javascript to make them functional.
+In order to support your app’s functionality, you’ll need to implement a number of JavaScript functions.
+Before you start implementing them, let’s start with an overview of the functions you’ll need to create for this app.
+<pre>
+createNewToDo()
+</pre>
+Prompts the user to enter a new to-do item. Once the user presses the OK button on the resulting dialog, a new row is added to the table.
+addTableRow(todoDictionary, appIsLoading)
+Adds a row to the to-do list table. It accepts several arguments: a dictionary containing both the text of the to-do along with the checkbox state, as well as with a boolean value which indicates if the app is loading or not. This will be explained a little later.
+<pre>
+checkBoxClicked()
+</pre>
+Called whenever the state of a checkbox is changed. It loops through all checkboxes and either applies or removes a strike-through style to the text of the corresponding to-do.
+<pre>
+viewSelectedRow(todoTextField)
+</pre>
+Displays the value of the passed-in text field in a popup dialog.
+<pre>
+deleteSelectedRow(deleteButton)
+</pre>
+Deletes the row that corresponds to the row of the button that was passed into the function.
+<pre>
+removeCompletedTasks()
+</pre>
+Loops through all the table rows and removes the rows where the to-do item is marked as complete.
+<pre>
+saveToDoList()
+</pre>
+Saves the to-do list using the Local Storage API.
+<pre>
+loadToDoList()
+</pre>
+Loads the to-do list when the app is first launched using the Local Storage API.
+<pre>
+deleteAllRows()
+</pre>
+Removes all rows from the table.
+And that’s it. You can refer back to this section if you have any questions about how each part fits in as you continue working through this PhoneGap tutorial.
+Now that the basic structure of the functions has been covered, it’s time to implement them in your app.
+<div class="alert alert-info" role="alert">Note: Each code block that you encounter below, unless indicated, should be placed between the script tags in index.html.</div>
+<pre><code>// create a new to-do
+function createNewToDo()
+{
+    var todoDictionary = {};
+ 
+    // prompt the user to enter to-do
+    var todo = prompt(&quot;To-Do&quot;,&quot;&quot;);
+    if (todo != null)
+    {
+        if (todo == &quot;&quot;)
+        {
+            alert(&quot;To-Do can't be empty!&quot;);
+        }
+        else
+        {
+            // append the new to-do with the table
+            todoDictionary = { check : 0 , text : todo};
+            addTableRow(todoDictionary, false);
+        }
+    }
+ 
+}
+</code>
+</pre>
+<b>createNewToDo()</b> is relatively straightforward; it simply prompts the user to enter a new to-do item.
+<pre><code>
+    // add a row to the table
+var rowID = 0;
+function addTableRow(todoDictionary, appIsLoading)
+{
+    rowID +=1;
+    var table = document.getElementById(&quot;dataTable&quot;);
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    // create the checkbox
+    var cell1 = row.insertCell(0);
+    var element1 = document.createElement(&quot;input&quot;);
+    element1.type = &quot;checkbox&quot;;
+    element1.name = &quot;chkbox[]&quot;;
+    element1.checked = todoDictionary[&quot;check&quot;];
+    element1.setAttribute(&quot;onclick&quot;, &quot;checkboxClicked()&quot;);
+    cell1.appendChild(element1);
+ 
+    // create the textbox
+    var cell2 = row.insertCell(1);
+    var element2 = document.createElement(&quot;input&quot;);
+    element2.type = &quot;text&quot;;
+    element2.name = &quot;txtbox[]&quot;;
+    element2.size = 16;
+    element2.id = &quot;text&quot; + rowID;
+    element2.value = todoDictionary[&quot;text&quot;];
+    element2.setAttribute(&quot;onchange&quot;, &quot;saveToDoList()&quot;);
+    cell2.appendChild(element2);
+ 
+    // create the view button
+    var cell3 = row.insertCell(2);
+    var element3 = document.createElement(&quot;input&quot;);
+    element3.type = &quot;button&quot;;
+    element3.id = rowID;
+    element3.value = &quot;View&quot;;
+    element3.setAttribute(&quot;onclick&quot;, &quot;viewSelectedRow(document.getElementById('text' + this.id))&quot;);
+    cell3.appendChild(element3);
+ 
+    // create the delete button
+    var cell4 = row.insertCell(3);
+    var element4 = document.createElement(&quot;input&quot;);
+    element4.type = &quot;button&quot;;
+    element4.value = &quot;Delete&quot;;
+    element4.setAttribute(&quot;onclick&quot;, &quot;deleteSelectedRow(this)&quot;);
+    cell4.appendChild(element4);
+ 
+    // update the UI and save the to-do list
+    checkboxClicked();
+    saveToDoList();
+ 
+    if (!appIsLoading) alert(&quot;Task Added Successfully.&quot;);
+}
+</code>
+</pre>
+When <b>addTableRow()</b> is called it adds a new row to the table with four separate cells. Then it adds an HTML element to each cell, namely a checkbox, a text box, a View button, and a Delete button. This also sets the necessary attributes on these four elements.
+<pre><code>// add the strike-through styling to completed tasks
+function checkboxClicked()
+{
+    var table = document.getElementById("dataTable");
+    var rowCount = table.rows.length;
+ 
+    // loop through all rows of the table
+    for(var i = 0; i < rowCount; i++)
+    {
+        var row = table.rows[i];
+        var chkbox = row.cells[0].childNodes[0];
+        var textbox = row.cells[1].childNodes[0];
+ 
+        // if the checkbox is checked, add the strike-through styling
+        if(null != chkbox && true == chkbox.checked)
+        {
+            if(null != textbox)
+            {       
+                textbox.style.setProperty("text-decoration", "line-through");
+            }
+        }
+ 
+        // if the checkbox isn't checked, remove the strike-through styling
+        else
+        {
+            textbox.style.setProperty("text-decoration", "none");
+        }
+ 
+    }
+ 
+    // save the to-do list
+    saveToDoList();
+}
+</code>
+</pre>
+ <b>checkboxClicked()</b> performs only a single task. It loops through the all the rows of the table, determines the state of each checkbox, and applies the strike-through styling to the to-do text if the checkbox is set. Once complete, checkboxClicked() then calls saveToDoList().   
+<pre><code>// view the content of the selected row
+function viewSelectedRow(todoTextField)
+{
+    alert(todoTextField.value);
+}
+</code></pre>
+Nothig much as you can see just alerts what you have entered.
+<pre><code>
+    // delete the selected row
+function deleteSelectedRow(deleteButton)
+{
+    var p = deleteButton.parentNode.parentNode;
+    p.parentNode.removeChild(p);
+    saveToDoList();
+}
+</code></pre>
+<b>deleteSelectedRow()</b> is another relatively simple function. It takes the button reference that was passed in and deletes the corresponding to-do item from the list.
+<pre>
+    <code>
+        // remove completed tasks
+function removeCompletedTasks()
+{
+    var table = document.getElementById("dataTable");
+    var rowCount = table.rows.length;
+ 
+    // loop through all rows of the table
+    for(var i = 0; i < rowCount; i++)
+    {
+        // if the checkbox is checked, delete the row
+        var row = table.rows[i];
+        var chkbox = row.cells[0].childNodes[0];
+        if(null != chkbox && true == chkbox.checked)
+        {
+            table.deleteRow(i);
+            rowCount--;
+            i--;
+        }
+    }
+ 
+    // save the to-do list
+    saveToDoList();
+ 
+    alert("Completed Tasks Were Removed Successfully.");
+}
+    </code>
+</pre>
+<b>removeCompletedTasks()</b> loops through all table rows and determines the state of each row’s checkbox. If the checkbox is checked, then the table row is removed.
+
+
+<pre>
+    <code>
+        // save the to-do list
+function saveToDoList()
+{
+    var todoArray = {};
+    var checkBoxState = 0;
+    var textValue = &quot;&quot;;
+ 
+    var table = document.getElementById(&quot;dataTable&quot;);
+    var rowCount = table.rows.length;
+ 
+    if (rowCount != 0)
+    {
+        // loop through all rows of the table
+        for(var i=0; i&lt;rowCount; i++)
+        {
+            var row = table.rows[i];
+ 
+            // determine the state of the checkbox
+            var chkbox = row.cells[0].childNodes[0];
+            if(null != chkbox &amp;&amp; true == chkbox.checked)
+            {
+                checkBoxState = 1;
+            }
+            else
+            {
+                checkBoxState= 0;
+            }
+ 
+            // retrieve the content of the to-do
+            var textbox = row.cells[1].childNodes[0];
+            textValue = textbox.value;
+ 
+            // populate the array
+            todoArray[&quot;row&quot; + i] =
+            {
+                check : checkBoxState,
+                text : textValue
+            };
+        }
+    }
+    else
+    {
+        todoArray = null;
+    }
+ 
+    // use the local storage API to persist the data as JSON
+    window.localStorage.setItem(&quot;todoList&quot;, JSON.stringify(todoArray));
+}
+
+    </code>
+</pre>
+saveToDoList() does what it says on the tin, so it just saves the todolist.
+<pre>
+    <code>
+        // load the to-do list
+function loadToDoList()
+{
+    // use the local storage API load the JSON formatted to-do list, and decode it
+    var theList = JSON.parse(window.localStorage.getItem(&quot;todoList&quot;));
+ 
+    if (null == theList || theList == &quot;null&quot;)
+    {
+        deleteAllRows();
+    }
+    else
+    {
+        var count = 0;
+        for (var obj in theList)
+        {
+            count++;
+        }
+ 
+        // remove any existing rows from the table
+        deleteAllRows();
+ 
+        // loop through the to-dos
+        for(var i = 0; i &lt; count; i++)
+        {
+            // adding a row to the table for each one
+            addTableRow(theList[&quot;row&quot; + i], true);
+        }
+    }
+}
+    </code>
+</pre>
+loadToDoList() provides a mechanism to load up the to-do list that you’ve persisted with saveToDoList().
+<pre>
+    <code>
+        // delete all the rows
+function deleteAllRows()
+{
+    var table = document.getElementById(&quot;dataTable&quot;);
+    var rowCount = table.rows.length;
+ 
+    // loop through all rows of the table
+    for(var i = 0; i &lt; rowCount; i++)
+    {
+        // delete the row
+        table.deleteRow(i);
+        rowCount--;
+        i--;
+    }
+ 
+    // save the to-do list
+    saveToDoList();
+}
+    </code>
+</pre>
+deleteAllRows() simply removes all rows from the table; it’s used to clean up the UI in an efficent fashion.
+<h3>Step 5: Lets use them in our index.html</h3>
+<h4>
+    Calling the functions you created above is quite simple. You’re just adding the relevant function call to the onClick property of the UI controls.
+Add the following code between the body tags of index.htmland build it.
+<pre>
+    <code>
+        &lt;body onload=&quot;loadToDoList()&quot;&gt;
+    &lt;input type=&quot;button&quot; value=&quot;Add To-Do&quot; onclick=&quot;createNewToDo()&quot;/&gt;
+    &lt;input type=&quot;button&quot; value=&quot;Remove Completed Tasks()&quot; onclick=&quot;removeCompletedTasks()&quot;/&gt;
+    &lt;br/&gt;&lt;br/&gt;
+    &lt;table id=&quot;dataTable&quot; width=&quot;100%&quot; border=&quot;1&quot;&gt;
+ 
+    &lt;/table&gt;
+&lt;/body&gt;
+    </code>
+</pre>
+And Voila! You should see this.
+<br></h4>
+<img src="img/step4.png"/>
+<br>
+Our app is ready!! You can add a bit of CSS Styling to make it more beautiful, but thats another scenario all together.
+
+     </div>
+	 <hr>
+	 <footer>
+            <div class="row">
+                
+                    <p>Copyright &copy; Christopher Rathnam 2015</p>
+                
+            </div>
+            <!-- /.row -->
+        </footer>
+        
+    </section>
+
+   
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
