@@ -3,7 +3,7 @@
 A Final project for Web Development.
 This site utilizes HTML, CSS, Javascript, mySQL ,and PHP.
 
-http://chrisrathnam.com/Final_Project/
+###http://chrisrathnam.com/Final_Project/
 
 This site allows a user to login and create a database based on the top 250 movies according to IMDB. 
 Users can rate the movie, as well as recommend movies to other users. Once the receiving user has logged in, they will see what movie has been 
